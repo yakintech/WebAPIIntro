@@ -46,6 +46,8 @@ namespace WebAPIIntro.Controllers
             NorthwindContext db = new NorthwindContext();
             Employee employee = db.Employees.Find(id);
 
+
+
             if(employee == null)
             {
                 return NotFound("Boyle bir employee bulunamadi");
